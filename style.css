@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  font-family: 'Lato', monospace;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+a {
+  color: #00bbff;
+  cursor: pointer;
+}
