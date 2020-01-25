@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>gmsitech.com - Home</title>
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG"
@@ -15,44 +15,40 @@
 
 <body>
   <header>
+    <h1 class="visuallyHidden"> Sophie's Portfolio</h1>
     <div class="logo"></div>
     <p class="intro">Want a developer that pays attention to your needs? You've found them! Check out some of the projects listed here.</p>
   </header>
-  <section class="main">
-    <div class="right">
-      <nav class="" role="navigation" aria-label="main navigation">
-        <div class="main-links">
-          <a href="http://gmsitech.com/portfolio/">
-            Sophie"s Portfolio</a>
-          <a href="http://gmsitech.com/gds/">Game Design Site</a>
-          <a href="http://gmsitech.com/ed/">Education Blog</a>
-        </div>
+  <main> 
+   <nav aria-label="main navigation">
+      <a tabindex="0" href="http://gmsitech.com/portfolio/">
+        Sophie's Portfolio</a>
+      <a href="http://gmsitech.com/gds/">Game Design Site</a>
+      <a href="http://gmsitech.com/ed/">Education Blog</a>
+      <a class="link" href="https://www.npmjs.com/~techmsi" 
+      aria-label="View NPM modules">
+        <i class="fab fa-npm" 
+        ></i>
+      </a>
+      <a class="link" href="https://stackoverflow.com/users/1883272/techmsi" 
+      aria-label="View Stack Overflow">
+        <i class="fab fa-stack-overflow"></i>
+      </a>
+      <a class="link" href="https://github.com/techmsi" 
+      aria-label="View Github">
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="link" href="https://bitbucket.org/techmsi/" 
+      aria-label="View Bitbucket">
+        <i class="fab fa-bitbucket"></i>
+      </a>
+  </nav>
+      <div class="image" tab-index="-1"></div>
 
-        <div class="image"></div>
-
-        <ul class="links">
-          <a href="https://www.npmjs.com/~techmsi">
-            <i class="fab fa-npm"></i>
-          </a>
-          <a href="https://stackoverflow.com/users/1883272/techmsi">
-            <i class="fab fa-stack-overflow"></i>
-          </a>
-          <a href="https://github.com/techmsi">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://bitbucket.org/techmsi/">
-            <i class="fab fa-bitbucket"></i>
-          </a>
-      </nav>
-
-    </div>
-    <div class="left">
-      <ul class="skills">
-        <li class="header">Vanilla</li>
-        <li>
-          <i class="fab fa-js-square"></i>
-        </li>
-        <li class="header">Frameworks</li>
+      <ul class="skills" aria-label="Skill Set">
+        <li class="header" aria-label="Vanilla skills: Java Script">Vanilla</li>
+        <li class="fab fa-js-square"></li>
+        <li class="header" aria-label="Frameworks: React, Angular, Vue">Frameworks</li>
         <li class="fab fa-react"></li>
         <li class="fab fa-angular"></li>
         <li class="fab fa-vuejs"></li>
@@ -74,11 +70,9 @@
         <li class="fab fa-apple"></li>
         <li class="fab fa-linux"></li>
       </ul>
-    </div>
-  </section>
-
+</main>
   <footer>
-    <a href="" rel="author">Sophie Idromenos.</a>
+    <a href="https://github.com/techmsi" rel="author" aria-label="View Author's Github">Sophie Idromenos.</a>
     Copyright ©
     <script>
       document.write(new Date().getFullYear())
@@ -96,7 +90,6 @@
             "name":"Sophie Idromenos",
             "url":"http://gmsitech.com"
           }
-          
       }
     </script>
 </body>
